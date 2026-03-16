@@ -1,0 +1,33 @@
+# LLM Client
+groq
+
+# Wikipedia API
+wikipedia-api
+
+# RAG & Embeddings
+chromadb
+sentence-transformers
+
+# Web Search
+ddgs
+
+# Environment
+python-dotenv
+
+slowapi
+
+uvicorn
+
+pydantic
+
+fastapi
+
+pymupdf
+
+python-docx
+
+python-pptx
+
+python-multipart
+
+

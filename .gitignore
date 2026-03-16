@@ -1,0 +1,64 @@
+-# =====================
+# SECURITY - NEVER PUSH
+# =====================
+.env
+.env.local
+.env.production
+*.key
+*.pem
+
+# =====================
+# VIRTUAL ENVIRONMENT
+# =====================
+venv/
+env/
+.venv/
+__pypackages__/
+
+# =====================
+# PYTHON CACHE
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# =====================
+# DATABASE & STORAGE
+# =====================
+chroma_persistent_storage/
+*.db
+*.sqlite
+*.sqlite3
+
+# =====================
+# DATA FILES (too large)
+# =====================
+news_articles/
+*.csv
+*.parquet
+
+# =====================
+# JUPYTER NOTEBOOKS
+# =====================
+.ipynb_checkpoints/
+*.ipynb
+
+# =====================
+# VS CODE
+# =====================
+.vscode/
+*.code-workspace
+
+# =====================
+# WINDOWS
+# =====================
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# =====================
+# MAC
+# =====================
+.DS_Store
