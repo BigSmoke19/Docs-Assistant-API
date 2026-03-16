@@ -1,10 +1,9 @@
 ---
-title: Docs-Assistant-API
+title: Docs Assistant API
 emoji: 📊
-colorFrom: pink
-colorTo: purple
+colorFrom: purple
+colorTo: indigo
 sdk: docker
-app_file: main.py
 pinned: false
 ---
 
