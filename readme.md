@@ -1,5 +1,5 @@
 ---
-title: Docs Assistant API
+title: Docs-Assistant-API
 emoji: 📊
 colorFrom: pink
 colorTo: purple
