@@ -100,6 +100,9 @@ def get_collection(session_id: str):
 # Function to query documents
 def query_documents(question,session_id,n_results=2):
 
+    if any(word in question.lower() for word in ["summarize", "summary", "overview", "all"]):
+        n_results = 10  # get more chunks for full summary
+
     collection = get_collection(session_id)
 
     # query_embedding = get_embedding(question)

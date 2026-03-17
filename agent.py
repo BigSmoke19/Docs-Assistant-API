@@ -49,11 +49,12 @@ def run_agent(user_question: str,session_id, silent: bool = False):
 
             RULES:
             1. ALWAYS use search_documents to find relevant information
-            2. Only answer based on what is found in the documents
-            3. If the document does not contain the answer → say "I could not find this information in the uploaded documents"
-            4. NEVER make up information or answer from your own knowledge
-            5. After getting document results → give final answer immediately
-            6. Keep answers concise and accurate
+            2. For summarization requests → use search_documents with query "main topics overview summary"
+            3. Only answer based on what is found in the documents
+            4. If the document does not contain the answer → say "I could not find this information in the uploaded documents"
+            5. NEVER make up information or answer from your own knowledge
+            6. After getting document results → give final answer immediately
+            7. Keep answers concise and accurate
 
             Always respond in valid JSON only — no extra text, no explanation:
             {"tool": "search_documents", "input": "your search query"}
