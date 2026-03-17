@@ -68,6 +68,7 @@ def run_agent(user_question: str,session_id, silent: bool = False):
     ]
 
     tools_used = []
+    sources = []
 
     for iteration in range(5):
         response = client.chat.completions.create(
@@ -94,7 +95,8 @@ def run_agent(user_question: str,session_id, silent: bool = False):
         if already_used:
             return {
                 "answer": "Could not find a definitive answer.",
-                "tools_used": tools_used
+                "tools_used": tools_used,
+                "sources" : sources
             }
 
         tools_used.append({"tool": tool_name, "input": tool_input})
