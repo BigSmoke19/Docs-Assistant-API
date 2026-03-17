@@ -6,7 +6,7 @@ import os
 
 
 def create_txt_file(file_path: str, text: str, destination: str):
-    name = os.path.splitext(file_path)[0].split('\\')[-1]
+    name = os.path.splitext(os.path.basename(file_path))[0]
     print(f" Creating: {name}.txt/n path: {file_path}")
     path = os.path.join(destination, f"{name}.txt")
     with open(path, "w", encoding="utf-8") as f:
